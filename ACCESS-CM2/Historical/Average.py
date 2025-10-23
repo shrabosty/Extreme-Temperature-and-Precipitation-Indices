@@ -48,6 +48,7 @@ avg_df = (
 avg_df = avg_df.sort_values(["lat", "lon"]).reset_index(drop=True)
 avg_df.to_csv(OUT_CSV, index=False)
 
-print(f"✅ Averaged indices saved to:\n{OUT_CSV}")
+print(f"Averaged indices saved to:\n{OUT_CSV}")
 print("Preview:")
 print(avg_df.head())
+
